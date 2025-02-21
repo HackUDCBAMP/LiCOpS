@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2x7d73kpjfly"]
+
+[ext_resource type="Texture2D" uid="uid://1llt3iin2pw6" path="res://placeholder/grass.jpeg" id="1_vvxsn"]
+[ext_resource type="PackedScene" uid="uid://cngoktq78ge1y" path="res://jugador.tscn" id="2_l5ufm"]
+
+[node name="Mundo" type="Node2D"]
+
+[node name="Grass" type="Sprite2D" parent="."]
+position = Vector2(323, 284)
+scale = Vector2(2.86556, 2.52333)
+texture = ExtResource("1_vvxsn")
+
+[node name="Jugador" parent="." instance=ExtResource("2_l5ufm")]
+position = Vector2(321, 282)
