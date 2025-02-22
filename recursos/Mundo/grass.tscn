@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7qa06naq2kpe"]
+
+[ext_resource type="Texture2D" uid="uid://1llt3iin2pw6" path="res://recursos/placeholder/grass.jpeg" id="1_shlob"]
+
+[node name="Sprite2D" type="Sprite2D"]
+
+[node name="Grass" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, -3.8147e-06)
+scale = Vector2(0.142222, 0.142222)
+texture = ExtResource("1_shlob")
+centered = false

@@ -1,14 +1,63 @@
 [gd_scene load_steps=3 format=3 uid="uid://b2x7d73kpjfly"]
 
-[ext_resource type="Texture2D" uid="uid://1llt3iin2pw6" path="res://placeholder/grass.jpeg" id="1_vvxsn"]
+[ext_resource type="Texture2D" uid="uid://1llt3iin2pw6" path="res://recursos/placeholder/grass.jpeg" id="1_vvxsn"]
 [ext_resource type="PackedScene" uid="uid://cngoktq78ge1y" path="res://jugador.tscn" id="2_l5ufm"]
 
 [node name="Mundo" type="Node2D"]
 
+[node name="Jugador" parent="." instance=ExtResource("2_l5ufm")]
+top_level = true
+position = Vector2(160, 0)
+
 [node name="Grass" type="Sprite2D" parent="."]
-position = Vector2(323, 284)
-scale = Vector2(2.86556, 2.52333)
+position = Vector2(16.3123, 16.0627)
+scale = Vector2(0.139447, 0.141665)
 texture = ExtResource("1_vvxsn")
 
-[node name="Jugador" parent="." instance=ExtResource("2_l5ufm")]
-position = Vector2(321, 282)
+[node name="Grass2" type="Sprite2D" parent="."]
+position = Vector2(32, 6.77626e-21)
+scale = Vector2(0.142222, 0.142222)
+texture = ExtResource("1_vvxsn")
+centered = false
+
+[node name="Grass3" type="Sprite2D" parent="."]
+position = Vector2(1.90735e-06, 32)
+scale = Vector2(0.142222, 0.142222)
+texture = ExtResource("1_vvxsn")
+centered = false
+
+[node name="Grass4" type="Sprite2D" parent="."]
+position = Vector2(1.90735e-06, 64)
+scale = Vector2(0.142222, 0.142222)
+texture = ExtResource("1_vvxsn")
+centered = false
+
+[node name="Grass5" type="Sprite2D" parent="."]
+position = Vector2(32, 64)
+scale = Vector2(0.142222, 0.142222)
+texture = ExtResource("1_vvxsn")
+centered = false
+
+[node name="Grass6" type="Sprite2D" parent="."]
+position = Vector2(64, 64)
+scale = Vector2(0.142222, 0.142222)
+texture = ExtResource("1_vvxsn")
+centered = false
+
+[node name="Grass7" type="Sprite2D" parent="."]
+position = Vector2(64, 32)
+scale = Vector2(0.142222, 0.142222)
+texture = ExtResource("1_vvxsn")
+centered = false
+
+[node name="Grass8" type="Sprite2D" parent="."]
+position = Vector2(64, 0)
+scale = Vector2(0.142222, 0.142222)
+texture = ExtResource("1_vvxsn")
+centered = false
+
+[node name="Grass9" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+scale = Vector2(0.142222, 0.142222)
+texture = ExtResource("1_vvxsn")
+centered = false

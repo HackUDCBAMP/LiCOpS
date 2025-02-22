@@ -1,12 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://cngoktq78ge1y"]
+[gd_scene load_steps=4 format=3 uid="uid://cngoktq78ge1y"]
 
-[ext_resource type="Texture2D" uid="uid://bkjy2ngaiebfi" path="res://placeholder/animos.png" id="1_1ds86"]
+[ext_resource type="Texture2D" uid="uid://bkjy2ngaiebfi" path="res://recursos/placeholder/animos.png" id="1_1ds86"]
 [ext_resource type="Script" path="res://jugador.gd" id="2_sjbqa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dbru4"]
+size = Vector2(32, 32)
 
 [node name="Jugador" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1.99998, -2.00005)
-scale = Vector2(0.521538, 0.478328)
+position = Vector2(16, 16)
+scale = Vector2(0.0984615, 0.0990712)
 texture = ExtResource("1_1ds86")
 script = ExtResource("2_sjbqa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_dbru4")
