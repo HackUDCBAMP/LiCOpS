@@ -35,27 +35,26 @@ func process_input() -> void:
 		anim_state.travel("Idle")
 
 func move(delta) -> void:
-	next_tile_percent += speed * delta
-	if next_tile_percent >= 1.0:
-		# Calcula la posición de destino
-		var target_position = init_position + (TILE_SIZE * input_direction)
-		
-		# Intenta moverse en pasos más pequeños
-		var motion = (TILE_SIZE * input_direction * speed * delta)
-		var collision = move_and_collide(motion)
-		if collision:
-			# Si hay colisión, detén el movimiento
-			is_moving = false
-			next_tile_percent = 0.0
-		else:
-			# Si no hay colisión, mueve al jugador
-			position = target_position
-			is_moving = false
-			next_tile_percent = 0.0
+	# Pequeño desplazamiento que toca avanzar en esta frame
+	var motion = (TILE_SIZE * input_direction) * (speed * delta)
+	
+	# Intenta moverte con colisión
+	var collision = move_and_collide(motion)
+	
+	if collision:
+		# Si hay colisión, paramos del todo
+		is_moving = false
+		next_tile_percent = 0.0
 	else:
-		# Mueve progresivamente hasta alcanzar el destino
-		position = init_position + (TILE_SIZE * input_direction * next_tile_percent)
-		move_and_slide()  # Asegura que respete las colisiones
+		# Si no hubo colisión, seguimos acumulando cuánto llevamos recorrido en esta "casilla"
+		next_tile_percent += speed * delta
+		
+		# Cuando llegue o pase de 1.0, ya hemos avanzado lo suficiente para completar la casilla
+		if next_tile_percent >= 1.0:
+			# Ajustamos posición exacta a la celda destino y reiniciamos
+			position = init_position + (TILE_SIZE * input_direction)
+			is_moving = false
+			next_tile_percent = 0.0
 
 
 func _physics_process(delta):
