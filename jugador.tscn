@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://jugador.gd" id="2_sjbqa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dbru4"]
-size = Vector2(320, 320)
+size = Vector2(318, 318)
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2yjgl"]
 animation = &"IdleRight"
