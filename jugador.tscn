@@ -146,6 +146,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_6pfob"]
 resource_name = "walk"
 length = 0.8
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -162,6 +163,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_32doh"]
 resource_name = "walkLeft"
 length = 0.8
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -178,6 +180,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_hs45f"]
 resource_name = "walkRight"
 length = 0.8
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -194,6 +197,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_ul8qj"]
 resource_name = "walkUp"
 length = 0.8
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

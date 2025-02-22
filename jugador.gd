@@ -35,6 +35,7 @@ func process_input() -> void:
 func move(delta) -> void:
 	next_tile_percent += speed * delta
 	if next_tile_percent >= 1.0:
+		# Has llegado a la siguiente celda
 		position = init_position + (TILE_SIZE * input_direction)
 		next_tile_percent = 0.0
 		is_moving = false
@@ -42,14 +43,19 @@ func move(delta) -> void:
 		position = init_position + (TILE_SIZE * input_direction * next_tile_percent)
 
 func _physics_process(delta):
-	if is_moving == false:
-		process_input()
-	elif input_direction != Vector2.ZERO:
+	 # Revisa primero si estás en medio del movimiento
+	if is_moving:
+		# Mientras estás moviendo, viaja a la animación de caminar
 		anim_state.travel("Walk")
+		
+		# Aquí actualizas la blend_position de la animación
+		anim_tree.set("parameters/Walk/blend_position", input_direction)
+		anim_tree.set("parameters/Idle/blend_position", input_direction)
+
 		move(delta)
 	else:
-		anim_state.travel("Idle")
-		is_moving = false
+		# Si no estás en movimiento, se procesa la nueva entrada
+		process_input()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
