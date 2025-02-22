@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var speed: float = 2.5
-const TILE_SIZE = 32
+const TILE_SIZE = 320
 
 @onready var anim_tree = $AnimationTree
 @onready var anim_state = anim_tree.get("parameters/playback")
@@ -14,6 +14,7 @@ var next_tile_percent = 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	init_position = position
 	pass # Replace with function body.
 
 func process_input() -> void:

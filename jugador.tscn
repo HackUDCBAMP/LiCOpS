@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://jugador.gd" id="2_sjbqa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dbru4"]
-size = Vector2(17, 21)
+size = Vector2(170, 201)
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2yjgl"]
 animation = &"IdleRight"
@@ -225,14 +225,13 @@ script = ExtResource("2_sjbqa")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-3.8147e-06, 0)
-scale = Vector2(0.0992308, 0.0995356)
 texture = ExtResource("1_j43rm")
 centered = false
 hframes = 3
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(15.5, 18.5)
+position = Vector2(155, 177.5)
 shape = SubResource("RectangleShape2D_dbru4")
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
