@@ -36,7 +36,7 @@ outline_size = 10
 shadow_size = 10
 shadow_color = Color(1, 0, 0.152941, 1)
 
-[node name="NPC" type="Node2D"]
+[node name="scanf" type="Node2D"]
 script = SubResource("GDScript_efemi")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
