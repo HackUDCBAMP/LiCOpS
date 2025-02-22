@@ -1,16 +1,16 @@
-[gd_scene load_steps=22 format=3 uid="uid://b2x7d73kpjfly"]
+[gd_scene load_steps=23 format=3 uid="uid://b2x7d73kpjfly"]
 
 [ext_resource type="PackedScene" uid="uid://cngoktq78ge1y" path="res://jugador.tscn" id="2_l5ufm"]
-[ext_resource type="Texture2D" uid="uid://cyfbqrn2yl2us" path="res://recursos/Mundo/HIERBA-1.png.png" id="3_qsgnt"]
-[ext_resource type="Texture2D" uid="uid://dvpmjtcytiyvy" path="res://recursos/Mundo/HIERBA-2.png.png" id="4_udv6x"]
-[ext_resource type="Texture2D" uid="uid://d2dbovgynitdl" path="res://recursos/Mundo/HIERBA-3.png.png" id="5_wkw1h"]
-[ext_resource type="Texture2D" uid="uid://bgmjwlbj8oljb" path="res://recursos/Mundo/HIERBA-4.png.png" id="6_6nxfj"]
-[ext_resource type="Texture2D" uid="uid://d3wxnj6wnbljg" path="res://recursos/Mundo/HIERBA-5.png.png" id="7_m2wm7"]
-[ext_resource type="Texture2D" uid="uid://da7ojwri7b3an" path="res://recursos/Mundo/AGUA-1.png.png" id="8_8rw18"]
-[ext_resource type="Texture2D" uid="uid://qjlro23y67q8" path="res://recursos/Mundo/AGUA-2.png.png" id="9_1booq"]
+[ext_resource type="Texture2D" uid="uid://cat3ai6pu3b68" path="res://recursos/Mundo/HIERBA-1.png.png" id="3_qsgnt"]
+[ext_resource type="Texture2D" uid="uid://mndvfl5rsdjs" path="res://recursos/Mundo/HIERBA-2.png.png" id="4_udv6x"]
+[ext_resource type="Texture2D" uid="uid://gdbp3epqjd6k" path="res://recursos/Mundo/HIERBA-3.png.png" id="5_wkw1h"]
+[ext_resource type="Texture2D" uid="uid://b5flqougwdp2v" path="res://recursos/Mundo/HIERBA-4.png.png" id="6_6nxfj"]
+[ext_resource type="Texture2D" uid="uid://cjj6aug5tocnp" path="res://recursos/Mundo/HIERBA-5.png.png" id="7_m2wm7"]
+[ext_resource type="Texture2D" uid="uid://b5tgl81j1fufd" path="res://recursos/Mundo/AGUA-1.png.png" id="8_8rw18"]
+[ext_resource type="Texture2D" uid="uid://curifnjrvlmrn" path="res://recursos/Mundo/AGUA-2.png.png" id="9_1booq"]
 [ext_resource type="Texture2D" uid="uid://ce5onayjks27j" path="res://recursos/Mundo/Test.png" id="10_ma5ob"]
-[ext_resource type="Texture2D" uid="uid://b121t3kviuf7x" path="res://recursos/Mundo/ARBOL-1.png.png" id="10_pxkkc"]
-[ext_resource type="Texture2D" uid="uid://dv7yc42khx6e0" path="res://recursos/Jugador_Linuka/LinukaDerecha.png" id="11_jiw88"]
+[ext_resource type="Texture2D" uid="uid://l2cj06cij0md" path="res://recursos/Mundo/ARBOL-1.png.png" id="10_pxkkc"]
+[ext_resource type="Texture2D" uid="uid://bxu8isqlrn84f" path="res://recursos/Mundo/AGUA-3.png.png" id="11_owr12"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_764gx"]
 texture = ExtResource("3_qsgnt")
@@ -420,6 +420,7 @@ use_texture_padding = false
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6q3w5"]
 texture = ExtResource("4_udv6x")
+texture_region_size = Vector2i(320, 320)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -823,6 +824,7 @@ texture = ExtResource("4_udv6x")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s268v"]
 texture = ExtResource("5_wkw1h")
+texture_region_size = Vector2i(320, 320)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1226,6 +1228,7 @@ texture = ExtResource("5_wkw1h")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qtm1"]
 texture = ExtResource("6_6nxfj")
+texture_region_size = Vector2i(320, 320)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1629,6 +1632,7 @@ texture = ExtResource("6_6nxfj")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cy5i1"]
 texture = ExtResource("7_m2wm7")
+texture_region_size = Vector2i(320, 320)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2032,6 +2036,7 @@ texture = ExtResource("7_m2wm7")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w28q4"]
 texture = ExtResource("8_8rw18")
+texture_region_size = Vector2i(320, 320)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2435,6 +2440,7 @@ texture = ExtResource("8_8rw18")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h8bmf"]
 texture = ExtResource("9_1booq")
+texture_region_size = Vector2i(320, 320)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2838,7 +2844,7 @@ texture = ExtResource("9_1booq")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fuyf1"]
 texture = ExtResource("10_pxkkc")
-texture_region_size = Vector2i(32, 32)
+texture_region_size = Vector2i(320, 320)
 8:0/0 = 0
 9:0/0 = 0
 10:0/0 = 0
@@ -3124,9 +3130,14 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ffkm4"]
 texture = ExtResource("10_ma5ob")
-texture_region_size = Vector2i(32, 32)
+texture_region_size = Vector2i(320, 320)
 0:0/0 = 0
 1:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_up867"]
+texture = ExtResource("11_owr12")
+texture_region_size = Vector2i(320, 320)
+0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_kt7kc"]
 tile_size = Vector2i(320, 320)
@@ -3139,6 +3150,7 @@ sources/5 = SubResource("TileSetAtlasSource_w28q4")
 sources/6 = SubResource("TileSetAtlasSource_h8bmf")
 sources/7 = SubResource("TileSetAtlasSource_fuyf1")
 sources/8 = SubResource("TileSetAtlasSource_ffkm4")
+sources/9 = SubResource("TileSetAtlasSource_up867")
 
 [node name="Mundo" type="Node2D"]
 
@@ -3151,9 +3163,7 @@ tile_set = SubResource("TileSet_kt7kc")
 rendering_quadrant_size = 32
 collision_animatable = true
 format = 2
-layer_0/name = "Suelo"
-layer_0/tile_data = PackedInt32Array(-65535, 0, 0, -65533, 0, 0, -65531, 0, 0, -65529, 0, 0, -65527, 0, 0, -65534, 0, 0, -65532, 0, 0, -65530, 0, 0, -65528, 0, 0, -131071, 0, 0, -131070, 0, 0, -131069, 0, 0, -131068, 0, 0, -131067, 0, 0, -131066, 0, 0, -131065, 0, 0, -131064, 0, 0, -131063, 0, 0, -196599, 0, 0, -196600, 0, 0, -196601, 0, 0, -196602, 0, 0, -196603, 0, 0, -196604, 0, 0, -196605, 0, 0, -196606, 0, 0, -262142, 0, 0, -262143, 0, 0, -196607, 0, 0, -262141, 0, 0, -262140, 0, 0, -262139, 0, 0, -262138, 0, 0, -262137, 0, 0, -262136, 0, 0, -262135, 0, 0, -262134, 0, 0, -327670, 0, 0, -327671, 0, 0, -327672, 0, 0, -327673, 0, 0, -327674, 0, 0, -393211, 8, 0, -393212, 8, 0, -393213, 8, 0, -327678, 0, 0, -327679, 0, 0, -327675, 0, 0, -327676, 0, 0, -327677, 0, 0, -196598, 0, 0, -196597, 0, 0, -196596, 0, 0, -131060, 0, 0, -131061, 0, 0, -131062, 0, 0, -65524, 0, 0, -65525, 0, 0, -262133, 0, 0, -65526, 0, 0, -262132, 0, 0, -262131, 0, 0, -327667, 0, 0, -327668, 0, 0, -327669, 0, 0, -196595, 0, 0, -131059, 0, 0, -65523, 0, 0, -262144, 0, 0, -327680, 0, 0, -196608, 0, 0, -131072, 0, 0, -65536, 0, 0, 0, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 2, 0, 0, 3, 0, 0, 1, 0, 0, 65539, 0, 0, 65540, 0, 0, 4, 0, 0, 65541, 0, 0, 5, 0, 0, 65542, 0, 0, 6, 0, 0, 7, 0, 0, 65543, 0, 0, 65544, 0, 0, 8, 0, 0, 9, 0, 0, 65545, 0, 0)
-
-[node name="LinukaDerecha" type="Sprite2D" parent="."]
-position = Vector2(-128, 32)
-texture = ExtResource("11_jiw88")
+layer_0/name = "Suelo2"
+layer_0/tile_data = PackedInt32Array(-65529, 0, 0, -65526, 0, 0, -65535, 0, 0, -65533, 0, 0, -65531, 1, 0, -65527, 3, 0, -65534, 0, 0, -65532, 0, 0, -65530, 0, 0, -65528, 0, 0, -131071, 1, 0, -131070, 0, 0, -131069, 0, 0, -131068, 2, 0, -131067, 0, 0, -131066, 0, 0, -131065, 1, 0, -131064, 0, 0, -131063, 0, 0, -196599, 0, 0, -196600, 0, 0, -196601, 0, 0, -196602, 0, 0, -196603, 0, 0, -196604, 0, 0, -196605, 0, 0, -196606, 0, 0, -262142, 0, 0, -262143, 0, 0, -196607, 0, 0, -262141, 1, 0, -262140, 0, 0, -262139, 3, 0, -262138, 0, 0, -262137, 0, 0, -262136, 2, 0, -262135, 0, 0, -262134, 1, 0, -327670, 0, 0, -327671, 0, 0, -327672, 0, 0, -327673, 0, 0, -327674, 0, 0, -393211, 0, 0, -393212, 0, 0, -393213, 0, 0, -327678, 0, 0, -327679, 0, 0, -327675, 0, 0, -327676, 0, 0, -327677, 0, 0, -196598, 0, 0, -196597, 0, 0, -196596, 0, 0, -131060, 1, 0, -131061, 0, 0, -131062, 0, 0, -65524, 0, 0, -65525, 0, 0, -262133, 0, 0, -262132, 0, 0, -262131, 3, 0, -327667, 0, 0, -327668, 0, 0, -327669, 0, 0, -196595, 0, 0, -131059, 0, 0, -65523, 0, 0, -262144, 2, 0, -327680, 0, 0, -196608, 0, 0, -131072, 0, 0, -65536, 0, 0, 0, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 2, 2, 0, 3, 0, 0, 1, 0, 0, 65539, 0, 0, 65540, 3, 0, 4, 0, 0, 65541, 0, 0, 5, 0, 0, 65542, 3, 0, 6, 0, 0, 7, 0, 0, 65543, 3, 0, 65544, 0, 0, 8, 0, 0, 9, 0, 0, 65545, 1, 0, 10, 0, 0, 11, 2, 0, 12, 0, 0, 13, 0, 0, 65549, 0, 0, 65548, 0, 0, 65547, 0, 0, 65546, 0, 0, 131079, 3, 0, 131073, 3, 0, 131077, 4, 0, 262151, 4, 0, 327681, 4, 0, 327693, 4, 0, 196621, 4, 0, 131072, 4, 0, 196608, 4, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 196612, 0, 0, 196611, 0, 0, 196610, 0, 0, 196609, 0, 0, 262145, 0, 0, 262144, 0, 0, 327680, 0, 0, 327682, 0, 0, 262146, 0, 0, 262147, 0, 0, 327683, 9, 0, 327684, 5, 0, 262148, 0, 0, 262149, 0, 0, 327685, 5, 0, 327686, 5, 0, 262150, 0, 0, 196614, 0, 0, 196613, 0, 0, 131078, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 262153, 0, 0, 327689, 0, 0, 327688, 0, 0, 327687, 9, 1342177280, 262152, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0, 196619, 0, 0, 196618, 0, 0, 262154, 0, 0, 327690, 0, 0, 327691, 0, 0, 327692, 0, 0, 262156, 0, 0, 262155, 0, 0, 196620, 0, 0, 262157, 0, 0, -393216, 0, 0, -393215, 0, 0, -393214, 0, 0, -393210, 0, 0, -393209, 0, 0, -393208, 0, 0, -393207, 0, 0, -393206, 0, 0, -393205, 0, 0, -393204, 0, 0, -393203, 0, 0, 393220, 6, 0, 393223, 5, 1342177280, 393219, 5, 1610612736, 393221, 6, 0, 393222, 6, 0, 458756, 6, 0, 458757, 6, 0, 458758, 6, 0, 458755, 5, 1610612736, 458759, 5, 1342177280, 524292, 5, 805306368, 524293, 5, 805306368, 524294, 5, 805306368, 524291, 9, 1610612736, 524295, 9, 805306368)
+layer_1/name = "Arboles"
+layer_1/tile_data = PackedInt32Array(-65529, 7, 0, 6, 7, 0, -65532, 7, 0, 65538, 7, 0, -65535, 7, 0, -196605, 7, 0)
