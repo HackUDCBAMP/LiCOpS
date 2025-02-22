@@ -37,12 +37,26 @@ func process_input() -> void:
 func move(delta) -> void:
 	next_tile_percent += speed * delta
 	if next_tile_percent >= 1.0:
-		# Has llegado a la siguiente celda
-		position = init_position + (TILE_SIZE * input_direction)
-		next_tile_percent = 0.0
-		is_moving = false
+		# Calcula la posición de destino
+		var target_position = init_position + (TILE_SIZE * input_direction)
+		
+		# Intenta moverse en pasos más pequeños
+		var motion = (TILE_SIZE * input_direction * speed * delta)
+		var collision = move_and_collide(motion)
+		if collision:
+			# Si hay colisión, detén el movimiento
+			is_moving = false
+			next_tile_percent = 0.0
+		else:
+			# Si no hay colisión, mueve al jugador
+			position = target_position
+			is_moving = false
+			next_tile_percent = 0.0
 	else:
+		# Mueve progresivamente hasta alcanzar el destino
 		position = init_position + (TILE_SIZE * input_direction * next_tile_percent)
+		move_and_slide()  # Asegura que respete las colisiones
+
 
 func _physics_process(delta):
 	 # Revisa primero si estás en medio del movimiento

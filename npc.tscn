@@ -67,3 +67,5 @@ offset_bottom = 23.0
 text = "Texto por defecto dedefectodefectuoso"
 label_settings = SubResource("LabelSettings_rjh5j")
 horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/Control/Label"]
