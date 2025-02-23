@@ -22,7 +22,7 @@ Este proyecto fue desarrollado por un equipo de cuatro personas:
 - 🚀 *[Brais Pais Mariño]*
 - 🎨 *[Mencía Tubío Romero]*
 - 🪐 *[Pablo Castro Freire]*
-- 📝 *[Adrian Formigo]*
+- 📝 *[Adrian Formigo Gómez]*
 
 ## 📥 Instalación y ejecución
 ## OPCIÓN 1
