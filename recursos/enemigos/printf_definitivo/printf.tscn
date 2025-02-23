@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cr4krr5j5wfy5"]
 
 [ext_resource type="Texture2D" uid="uid://cyo0afa6xw7rd" path="res://recursos/enemigos/printf_definitivo/printf_definitivo.png" id="1_0lvfv"]
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_my75x"]
+[ext_resource type="Script" path="res://recursos/Jugador_Linuka/character_body_2d.gd" id="1_my75x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ifd82"]
 atlas = ExtResource("1_0lvfv")

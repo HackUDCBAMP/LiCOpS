@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://ckornb7tyxlkn"]
 
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_lni34"]
+[ext_resource type="Script" path="res://recursos/Jugador_Linuka/character_body_2d.gd" id="1_lni34"]
 [ext_resource type="Texture2D" uid="uid://c0ddv1mj2ha3d" path="res://recursos/enemigos/for_definitivo/for_definitivo.png" id="2_cbud3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k41g5"]
