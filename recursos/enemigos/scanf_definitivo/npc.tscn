@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://dsghpc0tjh1pf"]
+
+[ext_resource type="Script" path="res://npc_area.gd" id="1_d5o1h"]
+[ext_resource type="Texture2D" uid="uid://coa76ywnoxjvj" path="res://recursos/enemigos/scanf_definitivo/scanf_definitivo.png" id="1_gp3lv"]
+
+[sub_resource type="GDScript" id="GDScript_efemi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v2edn"]
+atlas = ExtResource("1_gp3lv")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1w736"]
+atlas = ExtResource("1_gp3lv")
+region = Rect2(160, 0, 160, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bnys0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v2edn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1w736")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jxlkk"]
+size = Vector2(670, 670)
+
+[node name="scanf" type="Node2D"]
+script = SubResource("GDScript_efemi")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_d5o1h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_bnys0")
+frame_progress = 0.459118
+centered = false
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
+position = Vector2(153, 158)
+shape = SubResource("RectangleShape2D_jxlkk")
+
+[node name="Control" type="Control" parent="CharacterBody2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
