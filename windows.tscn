@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://70lm5f8r533b"]
+[gd_scene load_steps=8 format=3 uid="uid://e20xqbs1kvp8"]
 
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_uvv4n"]
 [ext_resource type="Texture2D" uid="uid://ctmpvo4hubgp5" path="res://recursos/enemigos/windows/windows.png" id="2_hdr5s"]
@@ -33,7 +33,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kevwj"]
-size = Vector2(642, 591)
+size = Vector2(716, 646.5)
 
 [node name="windows" type="Node2D"]
 
@@ -41,13 +41,15 @@ size = Vector2(642, 591)
 script = ExtResource("1_uvv4n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(295, 285)
+scale = Vector2(1.81562, 1.75625)
 sprite_frames = SubResource("SpriteFrames_cvt5q")
 frame_progress = 0.840844
 
 [node name="Area2D" type="Area2D" parent="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
-position = Vector2(1, 6)
+position = Vector2(299, 284)
 shape = SubResource("RectangleShape2D_kevwj")
 
 [node name="Control" type="Control" parent="CharacterBody2D"]
