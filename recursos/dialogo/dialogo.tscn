@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbgoff3kti03v"]
+
+[ext_resource type="Script" path="res://recursos/dialogo/dialogo.gd" id="1_8ore5"]
+[ext_resource type="Texture2D" uid="uid://w5fjfhrx3jlh" path="res://recursos/dialogo/texto.png" id="1_edtrv"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_8ore5")
+
+[node name="Diálogo" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 21.425
+offset_top = 97.111
+offset_right = 61.425
+offset_bottom = 137.111
+scale = Vector2(1.0079, 1.11269)
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Diálogo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1000.1
+offset_top = 688.419
+offset_right = 1000.1
+offset_bottom = 688.419
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(42.5092, 35.8237)
+texture = ExtResource("1_edtrv")
+expand_mode = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Diálogo"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1000.0
+offset_top = 688.0
+offset_right = 970.0
+offset_bottom = 649.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(315.859, 155.218)
+bbcode_enabled = true
+text = "
+Hola soy Linuka"
+tab_size = 5
+custom_effects = [null]
+
+[node name="Label" type="Label" parent="Diálogo"]
+layout_mode = 0
+offset_left = 1120.04
+offset_top = 1182.14
+offset_right = 1751.04
+offset_bottom = 1591.14
+theme_override_colors/font_color = Color(0.208941, 0.131983, 0.0686821, 1)
+theme_override_font_sizes/font_size = 100
+text = "Hola! Soy Linuka
+"

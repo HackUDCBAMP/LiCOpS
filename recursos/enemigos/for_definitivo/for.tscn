@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=3 uid="uid://ckornb7tyxlkn"]
+
+[ext_resource type="Script" path="res://recursos/Jugador_Linuka/character_body_2d.gd" id="1_lni34"]
+[ext_resource type="Texture2D" uid="uid://c0ddv1mj2ha3d" path="res://recursos/enemigos/for_definitivo/for_definitivo.png" id="2_cbud3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k41g5"]
+atlas = ExtResource("2_cbud3")
+region = Rect2(0, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yd65e"]
+atlas = ExtResource("2_cbud3")
+region = Rect2(320, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iw1gk"]
+atlas = ExtResource("2_cbud3")
+region = Rect2(640, 0, 320, 320)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r1wnn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k41g5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yd65e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iw1gk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_npy53"]
+size = Vector2(787, 794)
+
+[node name="for" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_lni34")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_r1wnn")
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
+position = Vector2(-4, 0)
+shape = SubResource("RectangleShape2D_npy53")
+
+[node name="Control" type="Control" parent="CharacterBody2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CharacterBody2D/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/Control/Label"]

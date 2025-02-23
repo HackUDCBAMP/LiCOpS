@@ -1,0 +1,145 @@
+~ this_is_a_node_title
+Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
+Nathan: Here are some choices.
+- First one
+	Nathan: You picked the first one.
+- Second one
+	Nathan: You picked the second one.
+- Start again => this_is_a_node_title
+- End the conversation => END
+Nathan: For more information see the online documentation.
+=> END
+
+~ scanf_charla
+Linuka: Hola, supongo que es a ti a quién me tenía que encontrar...
+Scanf: Efectivamente! Aquí empieza tu enseñanza hacia la libertad! Aquí vamos!
+Scanf: La función de "scanf" guarda el valor dado por referencia en una variable, sigue el esquema de --> scanf(%d,&val). %d sirve para los valores de int, %c sirve para los valores de char, %f sirve para los valores de float, entre otros.
+Scanf: Estas lista/o para la prueba?
+- Por supuesto => scanf_batalla
+- No
+	Scanf: vuelve cuando quieras!!! => END
+
+~ scanf_fallo
+Scanf: Lamento decirte que has fallado, vuelve a intertarlo => END
+
+~ scanf_acierto
+Scanf: Muy bien, acertaste!!!! Estoy seguro de que lograrás volver a tu casa! Ánimo!=> END
+
+~ scanf_batalla
+Scanf: Tienes que completar este codigo: "int i; \nscanf(   ,   );"
+- A): %d , &i => scanf_acierto
+- B): %i , i  => scanf_fallo
+- C): Hello World => scanf_fallo
+
+~ printf_charla
+Linuka: El segundo guardián...Estoy lista, adelante!
+Printf: La función de "printf" imprime por pantalla el valor de una variable o un string, sigue este esquema: printf("Hola, %s", var) 
+Printf: Estas lista/o para la prueba?
+- No
+	Printf: vuelve cuando quieras!!! => END
+- Por supuesto => printf_batalla
+
+~ printf_fallo
+Printf: Lamento decirte que has fallado, vuelve a intertarlo => END
+
+~ printf_acierto
+Printf: Muy bien, acertaste!!!! => END
+
+~ printf_batalla
+Printf: Tienes que completar este codigo: "int i = 5; char c = 'a'; printf(" ", );
+- A): %d , a => printf_fallo
+- B): %d , i => printf_acierto
+- C): %c, i => printf_fallo
+
+~ if_charla
+If: Buenas, soy tu segundo mentor. He aquí mi desafío:
+If: La función de "if" es un control de flujo condicional que sigue este esquema --> if(condición).
+If: Estas lista/o para la prueba?
+- No
+	If: vuelve cuando quieras!!! => END
+- Por supuesto => if_batalla
+
+~ if_fallo
+if: Lamento decirte que has fallado, vuelve a intertarlo => END
+
+~ if_acierto
+If: Muy bien, acertaste!!!! Recuerda, ahora deberás dirigirte al noreste.=> END
+
+~ if_batalla
+If: Tienes que completar este codigo: "\nint i= 5;\nif(   );"
+- A): i => if_fallo
+- B): Hello world => if_fallo
+- C): i >= 5 => if_acierto
+
+~ start
+???: Ey, tú! Sí tú!! El que me está mirando desde ahí arriba!!
+???: Necesito tú ayuda! Sabes dónde estamos?
+- No, lo siento
+	Linuka: Vaya, bueno…Soy Linuka, de Linulalia. No tengo mucho tiempo para explicarte mi situación, pero en resumidas cuentas me alejé demasiado de mi pueblo y ahora estoy encerrada en este bosque.
+- A mi que me cuentas, quién eres siquiera?
+	Linuka: Qué borde. Soy Linuka, de Linulalia. No tengo mucho tiempo para explicarte mi situación, pero en resumidas cuentas me alejé demasiado de mi pueblo y ahora estoy encerrada en este bosque.
+Linuka: No importa las vueltas que dé, no veo la salida por ningún sitio.
+Linuka: Qué raro, Linulalia se ve mucho más libre y acogedora que este lugar…
+Linuka: En fin, no hay tiempo que perder, vamos a dar una vuelta a ver si podemos sacar más información sobre cómo salir...
+Juego: Utiliza WASD para moverte y presiona E cerca de los objetos y personas con los que quieras interactuar.
+=> END
+
+~ windows_charla
+Windows: Mas vale que te quedasen claras las lecciones anteriores porque yo soy el reto final y no podras superarme.
+Windows: Estas lista/o para tu derrota?
+- No
+	Windows: Lo suponia => END
+- Por supuesto => windows_batalla
+
+~ windows_fallo
+Windows: JAJAJAJA, HAS FALLADO, NO ERES LO SUFICIENTE COMO PARA VENCERME => END
+
+~ windows_acierto
+Windows: Maldicion……… 
+Windows: Bueno, las reglas son las reglas, toma esta llave, con ella podrás abrir la puerta y regresar a tu ciudad, pero no creas que todo acabe aquí...
+BAMP: Gracias por jugar a nuestra DEMO, esperamos que os haya gustado, y que sigais acompañando a Linuka en sus próximas aventuras!! => END
+~ windows_batalla
+Windows: A ver si consigues completar mi reto: "\nint i;\nscanf(  ,  );\nfor(int j = 0;   ; j++){\nint z = 10;\nif(z >   ){\nprintf("   " ,   )\n}\n}"
+- A): %d , &i / j < i / i / "%d , %d , %d" , i , j , z => windows_acierto
+- B): i , &d / j / j / "%d" , z => windows_fallo
+- C): %f , &i / z < i / j / "%c , %f , %d" , i , j , z => windows_fallo
+
+
+~ puerta
+???: Por mucho que lo intentes no se va a abrir.
+Linuka: Ay, que susto! Quién eres?
+Luka: Soy Luka, de Linulalia. Estás en el Bosque Ventanas.
+Luka: En este lugar, la gente que vive libre como nosotros suele quedar encerrada, yo estoy aquí para guiaros. La única manera de escapar es por esta puerta de aquí al lado.
+Linuka: Ah! Entonces abrela y ya está.
+Luka: No es tan fácil, para abrirla necesitarás una llave, la cuál conseguirás después de obtener la sabiduría con los 4 guardianes del bosque y enfrentarte a tu desafío final.
+Linuka: Espera, qué? De qué hablas? Es esto una clase de broma mala?
+Luka: Deberás dirigirte en este orden: Oeste, Sur, Noroeste, Noreste y oeste. Te ha quedado claro?
+- Sí. Todo entendido.
+	Luka: Bien, buena suerte
+- La verdad es que no…
+	Luka: Pero si te lo acabo de decir! Estos jóvenes de hoy en día teneis una memoria más mala…cuanto daño hacen las pantallitas…
+	Linuka: (Ala pero si parece de mi edad, o incluso más joven…) Hmm…vale, gracias…
+Linuka: Qué tío más raro, supongo que no me queda de otra...
+Linuka: Primero al Oeste...
+=> END
+
+~ for_charla
+For: Bienvenida a tu enseñanza final.
+Linuka: Creía que este momento no llegaría nunca! 
+For: La función de "for" es un bucle que se repite un número de veces dependiendo de la condición dada, sigue este esquema --> for(i = 0; i >= 0; i++).
+For: Estas lista/o para la prueba?
+- No
+	For: vuelve cuando quieras!!! => END
+- Por supuesto => for_batalla
+
+~ for_fallo
+For: Lamento decirte que has fallado, vuelve a intentarlo => END
+
+~ for_acierto
+For: Muy bien, acertaste!!!! Ahora te tocará enfrentarte a tu último desafío, dirigete al oeste... => END
+
+~ for_batalla
+For: Tienes que completar este codigo: "int i= 5; for( ; ; )"
+- A): i = 0; i - 1; i > 'a' => for_fallo
+- B): i = 0; i <= 100; i++ => for_acierto
+- C): &i = 0; i; Hello World => for_fallo

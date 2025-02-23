@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3 uid="uid://e20xqbs1kvp8"]
+
+[ext_resource type="Script" path="res://recursos/Jugador_Linuka/character_body_2d.gd" id="1_uvv4n"]
+[ext_resource type="Texture2D" uid="uid://ctmpvo4hubgp5" path="res://recursos/enemigos/windows/windows.png" id="2_hdr5s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2yapq"]
+atlas = ExtResource("2_hdr5s")
+region = Rect2(0, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cebl8"]
+atlas = ExtResource("2_hdr5s")
+region = Rect2(320, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4i30t"]
+atlas = ExtResource("2_hdr5s")
+region = Rect2(640, 0, 320, 320)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cvt5q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2yapq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cebl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4i30t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kevwj"]
+size = Vector2(716, 646.5)
+
+[node name="windows" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_uvv4n")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(295, 285)
+scale = Vector2(1.81562, 1.75625)
+sprite_frames = SubResource("SpriteFrames_cvt5q")
+frame_progress = 0.840844
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
+position = Vector2(299, 284)
+shape = SubResource("RectangleShape2D_kevwj")
+
+[node name="Control" type="Control" parent="CharacterBody2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CharacterBody2D/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/Control/Label"]
