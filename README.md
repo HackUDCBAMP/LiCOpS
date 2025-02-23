@@ -38,7 +38,7 @@ Este proyecto fue desarrollado por un equipo de cuatro personas:
 2. **Disfrutar**
 
 ## 📜 Licencia
-Este proyecto está bajo la licencia **GPL** y el arte realizado para el mismo está bajo una licencia **Creative Commons**.
+Este proyecto está bajo la licencia **GPL** pues queremos permitir el uso libre de nuestro código, siempre y cuando se nos acredite y no se cambie la licencia. El arte realizado para el mismo está bajo una licencia **Creative Commons BYSA** con el mismo objetivo.
 
 ## Responsabilidad
 El videojuego se provee “tal cual” (“as is”), sin garantía de ningún tipo, expresa o implícita, ni responsabilidad por daños o perjuicios que pudieran derivarse de su uso. El usuario asume toda la responsabilidad y riesgo por el uso que haga del mismo.
@@ -48,3 +48,5 @@ Si tienes dudas o sugerencias, puedes abrir un **issue** en este repositorio.
 
 ¡Esperamos que disfrutes aprendiendo **C** con nuestro juego! 🎮🚀
 
+Creative Commons BYSA
+GNU GPL
