@@ -11,6 +11,8 @@ Nathan: For more information see the online documentation.
 => END
 
 ~ scanf_charla
+Linuka: Hola, supongo que es a ti a quién me tenía que encontrar...
+Scanf: Efectivamente! Aquí empieza tu enseñanza hacia la libertad! Aquí vamos!
 Scanf: La función de "scanf" guarda el valor dado por referencia en una variable, sigue el esquema de --> scanf(%d,&val). %d sirve para los valores de int, %c sirve para los valores de char, %f sirve para los valores de float, entre otros.
 Scanf: Estas lista/o para la prueba?
 - Por supuesto => scanf_batalla
@@ -21,7 +23,7 @@ Scanf: Estas lista/o para la prueba?
 Scanf: Lamento decirte que has fallado, vuelve a intertarlo => END
 
 ~ scanf_acierto
-Scanf: Muy bien, acertaste!!!! => END
+Scanf: Muy bien, acertaste!!!! Estoy seguro de que lograrás volver a tu casa! Ánimo!=> END
 
 ~ scanf_batalla
 Scanf: Tienes que completar este codigo: "int i; \nscanf(   ,   );"
@@ -30,6 +32,7 @@ Scanf: Tienes que completar este codigo: "int i; \nscanf(   ,   );"
 - C): Hello World => scanf_fallo
 
 ~ printf_charla
+Linuka: El segundo guardián...Estoy lista, adelante!
 Printf: La función de "printf" imprime por pantalla el valor de una variable o un string, sigue este esquema: printf("Hola, %s", var) 
 Printf: Estas lista/o para la prueba?
 - No
@@ -49,6 +52,7 @@ Printf: Tienes que completar este codigo: "int i = 5; char c = 'a'; printf(" ", 
 - C): %c, i => printf_fallo
 
 ~ if_charla
+If: Buenas, soy tu segundo mentor. He aquí mi desafío:
 If: La función de "if" es un control de flujo condicional que sigue este esquema --> if(condición).
 If: Estas lista/o para la prueba?
 - No
@@ -59,7 +63,7 @@ If: Estas lista/o para la prueba?
 if: Lamento decirte que has fallado, vuelve a intertarlo => END
 
 ~ if_acierto
-If: Muy bien, acertaste!!!! => END
+If: Muy bien, acertaste!!!! Recuerda, ahora deberás dirigirte al noreste.=> END
 
 ~ if_batalla
 If: Tienes que completar este codigo: "\nint i= 5;\nif(   );"
@@ -90,12 +94,15 @@ Windows: Estas lista/o para tu derrota?
 Windows: JAJAJAJA, HAS FALLADO, NO ERES LO SUFICIENTE COMO PARA VENCERME => END
 
 ~ windows_acierto
-Windows: Maldicion……… => END
+Windows: Maldicion……… 
+Windows: Bueno, las reglas son las reglas, toma esta llave, con ella podrás abrir la puerta y regresar a tu ciudad, pero no creas que todo acabe aquí...
+BAMP: Gracias por jugar a nuestra DEMO, esperamos que os haya gustado, y que sigais acompañando a Linuka en sus próximas aventuras!! => END
 ~ windows_batalla
 Windows: A ver si consigues completar mi reto: "\nint i;\nscanf(  ,  );\nfor(int j = 0;   ; j++){\nint z = 10;\nif(z >   ){\nprintf("   " ,   )\n}\n}"
 - A): %d , &i / j < i / i / "%d , %d , %d" , i , j , z => windows_acierto
 - B): i , &d / j / j / "%d" , z => windows_fallo
 - C): %f , &i / z < i / j / "%c , %f , %d" , i , j , z => windows_fallo
+
 
 ~ puerta
 ???: Por mucho que lo intentes no se va a abrir.
@@ -116,6 +123,8 @@ Linuka: Primero al Oeste...
 => END
 
 ~ for_charla
+For: Bienvenida a tu enseñanza final.
+Linuka: Creía que este momento no llegaría nunca! 
 For: La función de "for" es un bucle que se repite un número de veces dependiendo de la condición dada, sigue este esquema --> for(i = 0; i >= 0; i++).
 For: Estas lista/o para la prueba?
 - No
@@ -126,7 +135,7 @@ For: Estas lista/o para la prueba?
 For: Lamento decirte que has fallado, vuelve a intentarlo => END
 
 ~ for_acierto
-For: Muy bien, acertaste!!!! => END
+For: Muy bien, acertaste!!!! Ahora te tocará enfrentarte a tu último desafío, dirigete al oeste... => END
 
 ~ for_batalla
 For: Tienes que completar este codigo: "int i= 5; for( ; ; )"
