@@ -1,7 +1,7 @@
 [gd_scene load_steps=42 format=3 uid="uid://b2x7d73kpjfly"]
 
 [ext_resource type="Script" path="res://mundo.gd" id="1_f11lu"]
-[ext_resource type="PackedScene" path="res://recursos/Jugador_Linuka/jugador.tscn" id="2_l5ufm"]
+[ext_resource type="PackedScene" uid="uid://cngoktq78ge1y" path="res://recursos/Jugador_Linuka/jugador.tscn" id="2_l5ufm"]
 [ext_resource type="Texture2D" uid="uid://cat3ai6pu3b68" path="res://recursos/Mundo/HIERBA-1.png.png" id="3_qsgnt"]
 [ext_resource type="Texture2D" uid="uid://mndvfl5rsdjs" path="res://recursos/Mundo/HIERBA-2.png.png" id="4_udv6x"]
 [ext_resource type="Texture2D" uid="uid://b5trne31da4ju" path="res://recursos/Mundo/puerta.png" id="5_1olm0"]
@@ -18,12 +18,12 @@
 [ext_resource type="Texture2D" uid="uid://ce5onayjks27j" path="res://recursos/Mundo/Test.png" id="10_ma5ob"]
 [ext_resource type="Texture2D" uid="uid://l2cj06cij0md" path="res://recursos/Mundo/ARBOL-1.png.png" id="10_pxkkc"]
 [ext_resource type="Texture2D" uid="uid://bxu8isqlrn84f" path="res://recursos/Mundo/AGUA-3.png.png" id="11_owr12"]
-[ext_resource type="PackedScene" path="res://recursos/enemigos/scanf_definitivo/npc.tscn" id="12_oc0c0"]
-[ext_resource type="PackedScene" path="res://recursos/enemigos/printf_definitivo/printf.tscn" id="13_ewnxv"]
-[ext_resource type="PackedScene" path="res://recursos/enemigos/if_definitivo/if.tscn" id="14_lmqg3"]
-[ext_resource type="PackedScene" path="res://recursos/enemigos/for_definitivo/for.tscn" id="15_oe5y1"]
-[ext_resource type="PackedScene" uid="uid://e20xqbs1kvp8" path="res://windows.tscn" id="16_m45r5"]
-[ext_resource type="PackedScene" path="res://recursos/Jugador_Lukario/lucario.tscn" id="18_i02m4"]
+[ext_resource type="PackedScene" uid="uid://dsghpc0tjh1pf" path="res://recursos/enemigos/scanf_definitivo/npc.tscn" id="12_oc0c0"]
+[ext_resource type="PackedScene" uid="uid://cr4krr5j5wfy5" path="res://recursos/enemigos/printf_definitivo/printf.tscn" id="13_ewnxv"]
+[ext_resource type="PackedScene" uid="uid://cymfwno2g47rx" path="res://recursos/enemigos/if_definitivo/if.tscn" id="14_lmqg3"]
+[ext_resource type="PackedScene" uid="uid://ckornb7tyxlkn" path="res://recursos/enemigos/for_definitivo/for.tscn" id="15_oe5y1"]
+[ext_resource type="PackedScene" uid="uid://e20xqbs1kvp8" path="res://recursos/enemigos/windows/windows.tscn" id="16_m45r5"]
+[ext_resource type="PackedScene" uid="uid://cedmfh6uni877" path="res://recursos/Jugador_Lukario/lucario.tscn" id="18_i02m4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_764gx"]
 texture = ExtResource("3_qsgnt")
